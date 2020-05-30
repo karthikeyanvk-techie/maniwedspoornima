@@ -10,16 +10,19 @@ import styled from 'styled-components';
 
 
 const Heading = styled.h1`
-    height:10%;
-    margin-left:10px;
-    //font-size:3rem;
-        font-weight: bold;
+//     height:10%;
+    margin:0px;
+    background: #fff;
+    box-sizing: border-box;
+    height: auto;
+    box-shadow: 0px 4px 5px #000;
+    margin: 0;
+    display: inline-block;
+    font-size:3rem;
+    font-weight: bold;
     color: crimson;
     @media screen and (max-width: 900px){
-        font-size:3rem;
-        font-weight: bold;
-    color: crimson;
-    margin-top: 10px;
+        font-size:2rem;
     }
 `
 class App extends Component {
