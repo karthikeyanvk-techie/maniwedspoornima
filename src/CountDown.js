@@ -4,15 +4,15 @@ import styled from 'styled-components'
 
 const CountDownDiv = styled.div`
 
-    margin: auto;
-    margin-top: 10px
+    margin: 0;
+//     margin-top: 10px
     //margin-top:50px;
-    margin-left:10px;
+//     margin-left:10px;
     font-size: xx-large;
     text-align:center;
     font-weight: bold;
-    color: chartreuse;
-    
+    color: white;
+    width: 100%;
     
     @media screen and (max-width: 900px){
        // margin-top:1.5rem;
@@ -44,7 +44,7 @@ class CountDown extends Component{
     }
 
     render(){
-        return <CountDownDiv style={this.props.style}>
+        return <CountDownDiv class="marqueeDiv" style={this.props.style}>
             Live stream of the ceremony starting {this.renderTime()}
         </CountDownDiv>
     }
