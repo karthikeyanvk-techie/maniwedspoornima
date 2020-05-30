@@ -39,7 +39,7 @@ class App extends Component {
             .then( ({ data }) => this.setState({live: data.length > 0}))
             .catch( err => console.error(err))*/
         var isLive = this.getParameterByName("isLive");
-        const startTime = moment('2020-06-03T04:30:00+10:00');
+        const startTime = moment('2020-06-03T04:30:00+05:30');
         var presentTime = moment.now();
         var diff = moment.duration(startTime.diff(presentTime));
         console.log(diff);
@@ -49,7 +49,7 @@ class App extends Component {
             this.setState({live: isLive});
         } else {
             if(diff._milliseconds <=0) {
-                this.setState({live: isLive});
+                this.setState({live: true});
             }
         }
     }
@@ -89,8 +89,8 @@ class App extends Component {
     render() {
         return (
             <div className="App" style={this.state.live ? {animation: 'theatre 0.5s forwards'} : {}}>
-                <Sun  style={this.hideStyle()}/>
-                <Heading style={this.hideStyle()}>Manikandan weds Poornima</Heading>
+//                 <Sun  style={this.hideStyle()}/>
+                <Heading>Manikandan weds Poornima</Heading>
                 <CountDown style={this.hideStyle()}/>
                 {this.renderTwitch()}
                 {/*/<Instructions style={this.hideStyle()}/>
