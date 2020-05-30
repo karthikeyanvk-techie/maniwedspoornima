@@ -1,7 +1,7 @@
 {
   "name": "mani-wedding-stream",
-  "version": "0.1.0",
-  "homepage": "https://karthikeyanvk-techie.github.io/maniwedspoornima",
+  "version": "0.2.0",
+  "homepage": "maniwedspoorni.in",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.2.0",
