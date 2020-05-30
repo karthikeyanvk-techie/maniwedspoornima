@@ -1,7 +1,7 @@
 {
   "name": "mani-wedding-stream",
   "version": "0.2.0",
-  "homepage": "https://maniwedspoorni.in",
+  "homepage": "https://maniwedspoorni.in/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.2.0",
