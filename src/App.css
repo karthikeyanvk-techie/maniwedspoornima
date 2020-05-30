@@ -75,5 +75,5 @@ h1, h2, h3{
   }
 }
 .marqueeDiv{
-  animation: marquee 5s linear infinite;
+  animation: marquee 15s linear infinite;
 }
