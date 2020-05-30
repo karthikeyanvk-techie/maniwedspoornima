@@ -5,13 +5,19 @@ import styled from 'styled-components'
 const CountDownDiv = styled.div`
 
     margin: auto;
-    margin-top:50px;
+    margin-top: 10px
+    //margin-top:50px;
+    margin-left:10px;
     font-size: xx-large;
     text-align:center;
+    font-weight: bold;
+    color: chartreuse;
+    
+    
     @media screen and (max-width: 900px){
-        margin-top:1.5rem;
-        margin-bottom:1.5rem;
-        font-size:1.5rem;
+       // margin-top:1.5rem;
+       // margin-bottom:1.5rem;
+       // font-size:1.5rem;
     }
 `
 

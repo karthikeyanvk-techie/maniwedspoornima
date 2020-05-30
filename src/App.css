@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   font-family: 'Quicksand', sans-serif;
-  height: 100vh;
+  height: 100%;
+  background-position:  right;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
+  background-image: url("background.JPG");
 }
 
 h1 {

@@ -11,9 +11,15 @@ import styled from 'styled-components';
 
 const Heading = styled.h1`
     height:10%;
-
+    margin-left:10px;
+    //font-size:3rem;
+        font-weight: bold;
+    color: crimson;
     @media screen and (max-width: 900px){
         font-size:3rem;
+        font-weight: bold;
+    color: crimson;
+    margin-top: 10px;
     }
 `
 class App extends Component {
@@ -30,7 +36,7 @@ class App extends Component {
             .then( ({ data }) => this.setState({live: data.length > 0}))
             .catch( err => console.error(err))*/
         var isLive = this.getParameterByName("isLive");
-        const startTime = moment('2020-06-03T13:50:00+10:00');
+        const startTime = moment('2020-06-03T04:30:00+10:00');
         var presentTime = moment.now();
         var diff = moment.duration(startTime.diff(presentTime));
         console.log(diff);
@@ -84,8 +90,8 @@ class App extends Component {
                 <Heading style={this.hideStyle()}>Manikandan weds Poornima</Heading>
                 <CountDown style={this.hideStyle()}/>
                 {this.renderTwitch()}
-                <Instructions style={this.hideStyle()}/>
-                <Wave style={this.hideStyle()}/>
+                {/*/<Instructions style={this.hideStyle()}/>
+                //<Wave style={this.hideStyle()}/>*/}
             </div>
         );
     }
