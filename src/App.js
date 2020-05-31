@@ -21,6 +21,7 @@ const Heading = styled.h1`
     font-size:3rem;
     font-weight: bold;
     color: crimson;
+    margin-top: -20px;
     @media screen and (max-width: 900px){
         font-size:2rem;
     }
@@ -39,7 +40,7 @@ class App extends Component {
             .then( ({ data }) => this.setState({live: data.length > 0}))
             .catch( err => console.error(err))*/
         var isLive = this.getParameterByName("isLive");
-        const startTime = moment('2020-06-03T04:30:00+05:30');
+        const startTime = moment('2020-06-03T04:30:00');
         var presentTime = moment.now();
         var diff = moment.duration(startTime.diff(presentTime));
         console.log(diff);

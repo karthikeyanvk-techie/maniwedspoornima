@@ -35,7 +35,7 @@ class CountDown extends Component{
 
     renderTime = () => {
         // Use moment.js to render human readable fuzzy time
-        const startTime = moment('2020-06-03T13:50:00+10:00')
+        const startTime = moment('2020-06-03T04:30:00')
         var duration = moment.duration(startTime.diff(this.state.now));
 
         /* Override output after deadline to avoid funny time 
